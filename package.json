@@ -1,0 +1,13 @@
+{
+	"name": "template_name",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"build": "sherpa build -b Vercel",
+		"dev": "sherpa start",
+		"lint": "sherpa lint"
+	},
+	"dependencies": {
+		"sherpa-core": "^0.0.11"
+	}
+}
