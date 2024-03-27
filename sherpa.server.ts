@@ -1,16 +1,26 @@
-/**
- * This file is not required to create a SherpaJS module.
- * Only needed to run server locally
- */
+import { Type as ServiceType } from "metadapter-event";
+import { SherpaJS } from "sherpa-core";
+import { Service } from "./src/model";
 
-import { NewServer } from "sherpa-core";
-
-export default NewServer({
-    version: 1,
-    app: {
-        module: ".",
-        properties: {
-            exampleProperty: "2"
+export default SherpaJS.New.server({
+    context: {
+        service: Service(ServiceType.Skeleton, undefined),
+        events: {
+            "test": {
+                id: "test",
+                schema: {
+                    type: "object",
+                    properties: {
+                      foo: {type: "integer"},
+                      bar: {type: "string"}
+                    },
+                    required: ["foo"],
+                    additionalProperties: false
+                }
+            },
+            "test2": {
+                id: "test2",
+            }
         }
-    },
+    }
 });

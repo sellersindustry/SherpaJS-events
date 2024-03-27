@@ -1,11 +1,10 @@
-import { NewModule } from "sherpa-core";
+import { SherpaJS } from "sherpa-core";
+import { Config } from "./src/model.js";
 
-export default NewModule({
-    version: 1,
-    name: "template_name",
+
+export default SherpaJS.New.module({
+    name: "events",
 });
 
 
-export type SHERPA_PROPERTIES = {
-    exampleProperty: string
-}
+export type ContextSchema = Config;
