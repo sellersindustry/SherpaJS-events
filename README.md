@@ -1,4 +1,3 @@
-
 # SherpaJS Events
 ![NPM Version](https://img.shields.io/npm/v/sherpajs-events)
 
@@ -8,16 +7,26 @@ using [Metadapter Event](https://github.com/sellersindustry/metadapter-event) an
 modular serverless platform.
 
 
+<br>
+
 
 ## Features
 - ✅ [SherpaJS](https://github.com/sellersindustry/SherpaJS) Module, an Agnostic and Modular Serverless Platform
 - ✅ Log event using [Metadapter Event](https://github.com/sellersindustry/metadapter-event)
 - ✅ Supports PostHog
 
+
+<br>
+
+
 ## Installation
 ```
 npm install sherpajs-events
 ```
+
+
+<br>
+
 
 ## Example Usage
 Services are loaded using [Metadapter Event](https://github.com/sellersindustry/metadapter-event). The `id` is the eventID that is logged with your event platform. The `schema` is optional, but uses [AJV schema](https://ajv.js.org/).
