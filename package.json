@@ -1,6 +1,7 @@
 {
 	"name": "sherpajs-events",
 	"version": "0.0.0",
+	"main": "sherpa.module.ts",
 	"scripts": {
 		"build": "sherpa build -b Vercel",
 		"dev": "sherpa build -b local && node ./.sherpa/index.js",

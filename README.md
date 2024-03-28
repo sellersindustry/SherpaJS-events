@@ -2,9 +2,10 @@
 ![NPM Version](https://img.shields.io/npm/v/sherpajs-events)
 
 Connect to event tracking platforms like PostHog
-using [Metadapter Event](https://github.com/sellersindustry/metadapter-event) and create event tracking endpoints for
-[SherpaJS](https://github.com/sellersindustry/SherpaJS) an agnostic and
-modular serverless platform.
+using [Metadapter Event](https://github.com/sellersindustry/metadapter-event)
+and create event tracking endpoints for
+[SherpaJS](https://github.com/sellersindustry/SherpaJS) an agnostic and modular
+serverless platform.
 
 
 <br>
