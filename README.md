@@ -33,29 +33,27 @@ npm install sherpajs-events
 Services are loaded using [Metadapter Event](https://github.com/sellersindustry/metadapter-event). The `id` is the eventID that is logged with your event platform. The `schema` is optional, but uses [AJV schema](https://ajv.js.org/).
 ```typescript
 // sherpa.server.ts
-import { SherpaJS } from "sherpa-core";
-import { ContextSchema, Service, ServiceType } from "sherpajs-events";
+import Events from "sherpajs-events";
+import { Service, ServiceType } from "sherpajs-events/src/model";
 
-export default SherpaJS.Load.module<ContextSchema>({
-    entry: "sherpajs-events",
-    context: {
-        service: Service(ServiceType.Skeleton, undefined),
-        events: {
-            "test": {
-                id: "test",
-                schema: {
-                    type: "object",
-                    properties: {
-                      foo: {type: "integer"},
-                      bar: {type: "string"}
-                    },
-                    required: ["foo"],
-                    additionalProperties: false
-                }
-            },
-            "test2": {
-                id: "test2"
+
+export default Events.load({
+    service: Service(ServiceType.Skeleton, undefined),
+    events: {
+        "test": {
+            id: "test",
+            schema: {
+                type: "object",
+                properties: {
+                  foo: {type: "integer"},
+                  bar: {type: "string"}
+                },
+                required: ["foo"],
+                additionalProperties: false
             }
+        },
+        "test2": {
+            id: "test2"
         }
     }
 });
