@@ -12,19 +12,19 @@
 
 
 import { SendEvent } from "../../src";
-import { Request, Response } from "sherpa-core";
-import { ContextSchema } from "../../sherpa.module";
+import { BodyType, Request, Response } from "sherpa-core";
+import { Config } from "../../sherpa.module";
 import { Payload } from "../../src/model";
 
 
-export async function POST(request:Request, context:ContextSchema) {
+export async function POST(request:Request, context:Config) {
     let key   = request.params.path.get("key") as string;
     let event = context.events[key];
     if (!event) {
         return Response.new({ status: 404 });
     }
     
-    if (request.bodyType != "JSON") {
+    if (request.bodyType != BodyType.JSON) {
         return Response.text("Request body must be in JSON format.", { status: 400 });
     }
 
