@@ -17,9 +17,11 @@ import { Event, Payload, IService } from "./model";
 
 
 export async function SendEvent(service:IService, event:Event, data:Payload):Promise<string|null> {
-    let validate = getSchema(event);
-    if (validate != undefined && !validate(data)) {
-        return getErrors(validate);
+    if (process.env.VERCEL == undefined) { //! FIXME
+        let validate = getSchema(event);
+        if (validate != undefined && !validate(data)) {
+            return getErrors(validate);
+        }
     }
     await service.add(event.id, data);
     return null;

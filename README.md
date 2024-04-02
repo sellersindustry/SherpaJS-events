@@ -7,6 +7,9 @@ and create event tracking endpoints for
 [SherpaJS](https://github.com/sellersindustry/SherpaJS) an agnostic and modular
 serverless platform.
 
+> [!CAUTION]
+> Vercel doesn't support AJV regularly, we are working on a fix, but as of now,
+> validation doesn't work on Vercel. 
 
 <br>
 
