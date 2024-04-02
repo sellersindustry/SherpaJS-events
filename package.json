@@ -11,6 +11,6 @@
 		"ajv": "^8.12.0",
 		"ajv-formats": "^2.1.1",
 		"metadapter-event": "^1.2.0",
-		"sherpa-core": "^1.1.1"
+		"sherpa-core": "^1.1.2"
 	}
 }
