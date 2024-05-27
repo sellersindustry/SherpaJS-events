@@ -4,7 +4,7 @@
 Connect to event tracking platforms like PostHog
 using [Metadapter Event](https://github.com/sellersindustry/metadapter-event)
 and create event tracking endpoints for
-[SherpaJS](https://github.com/sellersindustry/SherpaJS) an agnostic and modular
+[SherpaJS](https://docs.page/sellersindustry/SherpaJS) an agnostic and modular
 serverless platform.
 
 > [!CAUTION]
@@ -15,7 +15,7 @@ serverless platform.
 
 
 ## Features
-- ✅ [SherpaJS](https://github.com/sellersindustry/SherpaJS) Module, an Agnostic and Modular Serverless Platform
+- ✅ [SherpaJS](https://docs.page/sellersindustry/SherpaJS) Module, an Agnostic and Modular Serverless Platform
 - ✅ Log event using [Metadapter Event](https://github.com/sellersindustry/metadapter-event)
 - ✅ Supports PostHog
 
